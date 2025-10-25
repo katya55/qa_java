@@ -19,12 +19,12 @@ class LionTest {
     Lion lion;
 
    @BeforeEach
-    void setUp() throws Exception {
+    void setUp() {
         lion = new Lion(felineMock);
     }
 
     @Test
-    public void getKittensReturnValues() throws Exception {
+    public void getKittensReturnValues() {
         Mockito.when(felineMock.getKittens()).thenReturn(1);
         lion.getKittens();
         Mockito.verify(felineMock).getKittens();
@@ -38,7 +38,7 @@ class LionTest {
     }
 
     @Test
-    public void LionReturnException() throws Exception {
+    public void LionReturnException() {
         Exception exception = assertThrows(Exception.class, () -> new Lion("Бесполый"));
         assertEquals("Используйте допустимые значения пола животного - самец или самка", exception.getMessage());
     }

@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CatTest {
 
     @Mock
-    Feline felineMock = Mockito.mock(Feline.class);;
+    Feline felineMock = Mockito.mock(Feline.class);
 
     @Test
     public void getFoodIsCallAndReturnValues() throws Exception {
