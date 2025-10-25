@@ -13,6 +13,7 @@ public class ParameterizedTests {
     })
     public void doesHaveManeReturnTrueOrFalse(String sex, Boolean expected) throws Exception {
         Lion lion = new Lion(sex);
-        assertEquals(expected, lion.hasMane);
+        assertEquals(expected, lion.doesHaveMane());
     }
+}
 

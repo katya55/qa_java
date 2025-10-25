@@ -1,6 +1,6 @@
-/Users/ekaterinaklimova/qa_java/src/test/java/com/example/AnimalTest.java
-/Users/ekaterinaklimova/qa_java/src/test/java/com/example/CatTest.java
-/Users/ekaterinaklimova/qa_java/src/test/java/com/example/DoesHaveManeParameterizedTests.java
-/Users/ekaterinaklimova/qa_java/src/test/java/com/example/FelineTest.java
-/Users/ekaterinaklimova/qa_java/src/test/java/com/example/LionTest.java
-/Users/ekaterinaklimova/qa_java/src/test/java/com/example/getKittensTestSpy.java
+/Users/ekaterinaklimova/qa_java/src/test/java/AnimalTest.java
+/Users/ekaterinaklimova/qa_java/src/test/java/CatTest.java
+/Users/ekaterinaklimova/qa_java/src/test/java/FelineTest.java
+/Users/ekaterinaklimova/qa_java/src/test/java/GetKittensTest.java
+/Users/ekaterinaklimova/qa_java/src/test/java/LionTest.java
+/Users/ekaterinaklimova/qa_java/src/test/java/ParameterizedTests.java
