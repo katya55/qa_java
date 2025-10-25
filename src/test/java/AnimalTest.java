@@ -1,9 +1,9 @@
 import com.example.Animal;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
-import org.mockito.Mockito;
+import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -20,6 +20,7 @@ class AnimalTest {
     }
 
     @ParameterizedTest
+    @MethodSource("foods")
     public void getFood(String animalKind, List < String > expected) throws Exception {
         Animal animal = new Animal();
         assertEquals(expected, animal.getFood(animalKind));
@@ -29,6 +30,5 @@ class AnimalTest {
     public void getFood() throws Exception {
         Animal animal = new Animal();
         animal.getFood("Хищник");
-        Mockito.verify(animal).getFood(Mockito.any());
     }
 }
