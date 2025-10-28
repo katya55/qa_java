@@ -1,3 +1,4 @@
+import com.example.Animal;
 import com.example.Feline;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,13 +10,13 @@ import java.util.List;
 @ExtendWith(MockitoExtension.class)
 class FelineTest {
 
-    Feline felineMock = Mockito.mock(Feline.class);
+    Animal animal = Mockito.mock(Animal.class);
 
     @Test
     public void eatMeatWhenPredator() throws Exception {
         Feline feline = new Feline();
         feline.eatMeat();
-        Mockito.when(felineMock.getFood("Хищник")).thenReturn(List.of("Животные, Птицы, Рыба"));
+        Mockito.when(animal.getFood("Хищник")).thenReturn(List.of("Животные, Птицы, Рыба"));
 
     }
 
@@ -23,6 +24,6 @@ class FelineTest {
     public void eatMeatWhenHerbivores() throws Exception {
         Feline feline = new Feline();
         feline.eatMeat();
-        Mockito.when(felineMock.getFood("Травоядное")).thenReturn(List.of("Трава", "Различные растения"));
+        Mockito.when(animal.getFood("Травоядное")).thenReturn(List.of("Трава", "Различные растения"));
     }
 }
