@@ -13,14 +13,14 @@ import java.util.List;
 @ExtendWith(MockitoExtension.class)
 class LionTest {
 
-    @Mock
+  @Mock
     Feline felineMock = Mockito.mock(Feline.class);
 
     Lion lion;
 
    @BeforeEach
-    void setUp() {
-        lion = new Lion(felineMock);
+    void setUp() throws Exception {
+        lion = new Lion("Самец", felineMock);
     }
 
     @Test
@@ -39,7 +39,7 @@ class LionTest {
 
     @Test
     public void LionReturnException() {
-        Exception exception = assertThrows(Exception.class, () -> new Lion("Бесполый"));
+        Exception exception = assertThrows(Exception.class, () -> new Lion("Бесполый", felineMock));
         assertEquals("Используйте допустимые значения пола животного - самец или самка", exception.getMessage());
     }
 }
