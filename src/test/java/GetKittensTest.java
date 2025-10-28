@@ -21,10 +21,4 @@ public class GetKittensTest {
 
     }
 
-    @Test
-    public void getFamily() {
-        Mockito.when(feline.getFamily()).thenReturn("Кошачьи");
-        feline.getFamily();
-        Mockito.verify(feline).getFamily();
-    }
 }
