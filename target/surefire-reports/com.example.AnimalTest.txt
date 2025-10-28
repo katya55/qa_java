@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.example.AnimalTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.087 s <<< FAILURE! -- in com.example.AnimalTest
+com.example.AnimalTest.getFood -- Time elapsed: 0.040 s <<< ERROR!
+org.mockito.exceptions.misusing.NotAMockException: 
+
+Argument passed to verify() is of type Animal and is not a mock!
+Make sure you place the parenthesis correctly!
+See the examples of correct verifications:
+    verify(mock).someMethod();
+    verify(mock, times(10)).someMethod();
+    verify(mock, atLeastOnce()).someMethod();
+	at com.example.AnimalTest.getFood(AnimalTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
