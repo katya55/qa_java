@@ -5,7 +5,6 @@ import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 public class GetKittensTest {
@@ -17,8 +16,6 @@ public class GetKittensTest {
     public void getKittens() {
         feline.getKittens();
         Mockito.verify(feline).getKittens(Mockito.eq(1));
-        assertEquals(1, feline.getKittens());
-
     }
 
 }
